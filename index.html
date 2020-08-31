@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="funcao.js"></script>
+    <style>
+        body {
+            justify-items: center;
+            justify-content: center;
+            display: flex;
+        }
+        
+        div {
+            padding: 2px;
+            transform: translateY(50%);
+            text-align: center;
+            box-shadow: 2px 2px 20px black;
+        }
+    </style>
+    <title> Lampada</title>
+
+</head>
+
+<body>
+    <div>
+
+        <img src="lampada-apagada.jpg" id="luz" alt="Lampada apagada" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">
+    </div>
+</body>
+
+</html>
